@@ -24,13 +24,27 @@ double dif;
 time (&start);
 
 //Benchmark: LVer
-while(dif<=10) {
+while(dif<=2) {
 num=num+1;
 //printf("\n%d", num);
 time (&end);
 dif = difftime (end,start);
-if(dif==1){lv1=num;} //Stops saving after 1, 1.5 or 2 seconds. Im not sure...
-if(dif==5){lv2=num;} //Stops saving after 5, 5.5 or 6 seconds. Im not sure...
+}
+lv1=num;
+
+while(dif<=6) {
+num=num+1;
+//printf("\n%d", num);
+time (&end);
+dif = difftime (end,start);
+}
+lv2=num;
+
+while(dif<=11) {
+num=num+1;
+//printf("\n%d", num);
+time (&end);
+dif = difftime (end,start);
 }
 
 lv3=num;
