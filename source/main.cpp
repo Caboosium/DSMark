@@ -62,7 +62,7 @@ cl();
 printf("Your LV.1 score is: %d", lv1);
 printf("\nYour LV.2 score is: %d", lv2);
 printf("\nYour LV.3 score is: %d", lv3);
-printf("\nYour Devider score is: %d", num);
+printf("\nYour Divider score is: %d", num);
 while(1){
 
 }
