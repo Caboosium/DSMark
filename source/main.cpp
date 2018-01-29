@@ -9,6 +9,7 @@ int lv1;
 int lv2;
 int lv3;
 int dev;
+int div;
 
 void cl() { //Clear screen
 printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
@@ -57,12 +58,28 @@ num=num+1;
 time (&end);
 dif = difftime (end,start);
 }
+div=num;
+num=0;
+dev=0;
+
+while(dif<=30) {
+  dev=1;
+  dev=dev+dev;
+  dev=dev*dev;
+  dev=dev^dev;
+  dev=dev-dev;
+  dev=dev/dev;
+  num=num+1;
+  time (&end);
+  dif = difftime (end,start);
+}
 
 cl();
 printf("Your LV.1 score is: %d", lv1);
 printf("\nYour LV.2 score is: %d", lv2);
 printf("\nYour LV.3 score is: %d", lv3);
-printf("\nYour Divider score is: %d", num);
+printf("\nYour Divider score is: %d", div);
+printf("\nYour Mountain score is: %d", num);
 while(1){
 
 }
