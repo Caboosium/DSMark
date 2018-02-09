@@ -10,10 +10,14 @@ int lv1;
 int lv2;
 int lv3;
 int dev;
+<<<<<<< HEAD
 int devy;
 int script;
 int size;
 int dino;
+=======
+int div;
+>>>>>>> 86b65eda63cce411ea71263cd88d962b5004bb1a
 
 void cl() { //Clear screen
 printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
@@ -64,6 +68,21 @@ num=num+1;
 time (&end);
 dif = difftime (end,start);
 }
+div=num;
+num=0;
+dev=0;
+
+while(dif<=30) {
+  dev=1;
+  dev=dev+dev;
+  dev=dev*dev;
+  dev=dev^dev;
+  dev=dev-dev;
+  dev=dev/dev;
+  num=num+1;
+  time (&end);
+  dif = difftime (end,start);
+}
 
 devy=num;
 num=0;
@@ -113,9 +132,14 @@ cl();
 printf("Your LV.1 score is: %d", lv1);
 printf("\nYour LV.2 score is: %d", lv2);
 printf("\nYour LV.3 score is: %d", lv3);
+<<<<<<< HEAD
 printf("\nYour Divider score is: %d", devy);
 printf("\nYour GL score is: %d", num);
 printf(" (%dFPS)", num/10);
+=======
+printf("\nYour Divider score is: %d", div);
+printf("\nYour Mountain score is: %d", num);
+>>>>>>> 86b65eda63cce411ea71263cd88d962b5004bb1a
 while(1){
 
 }
